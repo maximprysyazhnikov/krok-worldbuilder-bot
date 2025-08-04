@@ -46,7 +46,7 @@ python main.py
 
 ✨ Credits
 
-Developed by [Maksym Prysyazhnikov](https://github.com/maximprysyazhnikov)
+Developed by Maksym Prysyazhnikov https://github.com/maximprysyazhnikov
 
 Powered by aiogram v3
 
