@@ -1,46 +1,66 @@
-# KROK Worldbuilder Bot
+# 🤖 KROK Worldbuilder Bot
 
-Телеграм-бот для дослідження всесвіту KROK: фракції, континенти, герої, генерація промтів для AI, інтерактивний лор.
+**KROK Worldbuilder Bot** is a Telegram AI assistant that helps explore the universe of the game **KROK: Shadow of Unity**.  
+The bot acts as a **lore chronicler**, allowing users to browse factions, continents, characters, generate prompts, and talk to a lore-aware AI.
 
-## Фічі
-- Довідник по світу: фракції, континенти, персонажі, англійською та українською
-- Генерація англомовних промтів для AI-ілюстрацій
-- Інтерактивний AI-діалог з ботом-хроністом KROK
-- Підтримка двох мов (UA/EN), повна клавіатура
-- Повна підтримка розширення лору без коду
+---
 
-## Запуск
+## 🌍 Features
 
-1. Клонувати репозиторій:
-    ```sh
-    git clone https://github.com/yourusername/krok-worldbuilder-bot.git
-    cd krok-worldbuilder-bot
-    ```
+- View rich descriptions of:
+  - 📜 Factions
+  - 🌐 Continents
+  - 🧙 Characters
+- 🧠 Generate image prompts in English based on short descriptions (UA/EN)
+- 🤖 Chat with a lore-aware AI about the KROK universe
+- 🌐 Multilingual support: English & Ukrainian
+- 🔄 Easy restart with language selection
 
-2. Встановити залежності:
-    ```sh
-    pip install -r requirements.txt
-    ```
+---
 
-3. Створити `.env` (або відредагувати `.env.example`):
-    ```
-    BOT_TOKEN=тут_твій_токен
-    OPENAI_API_KEY=твій_ключ_для_GPT
-    ```
+## 🛠 Installation
 
-4. Запустити бота:
-    ```sh
-    python main.py
-    ```
+1. **Clone the repository:**
 
-## Структура
-- `bot/` — логіка Telegram-бота (хендлери, клавіатури)
-- `bible/` — лор: континенти, фракції, персонажі
-- `prompts/` — промти для GPT та AI-генерації
-- `utils.py` — допоміжні класи та стани FSM
-- `main.py` — стартовий файл
+```bash
+git clone https://github.com/yourusername/krok-worldbuilder-bot.git
+cd krok-worldbuilder-bot
 
-## Ліцензія
-MIT
+python -m venv venv
+source venv/bin/activate        # On Linux/macOS
+venv\Scripts\activate.bat       # On Windows
 
-**Розробник:** [Maksym Prysyazhnikov](https://github.com/maximprysyazhnikov)
+pip install -r requirements.txt
+
+
+BOT_TOKEN=your_telegram_BOT_TOKEN
+OPENAI_API_KEY=your_OPENAI_API_KEY
+OPENROUTER_MODEL=openai/gpt-3.5-turbo
+OPENROUTER_KEY=your_OPENROUTER_KEY
+
+
+▶️ Running the Bot
+
+python main.py
+
+
+✨ Credits
+
+Developed by [Maksym Prysyazhnikov](https://github.com/maximprysyazhnikov)
+
+Powered by aiogram v3
+
+GPT responses via OpenAI API
+
+📢 Coming Soon
+Lore search 🔍
+
+Image generation with preview 🎨
+
+World map rendering 🗺
+
+Faction leaderboards & interactive missions 💥
+
+📬 Feedback
+Feel free to open issues or contribute via Pull Requests.
+Let's build the KROK universe together!
